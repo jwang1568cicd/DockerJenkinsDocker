@@ -4,6 +4,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'docker images build and run within a docker container!'
+		sh 'docker ps -a'
             }
         }
     }
